@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">744029099331-iqg9utvr41l0o48i6hc3kcrotrt27gnu.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://test-notif-604ae.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">744029099331</string>
+    <string name="google_api_key" translatable="false">AIzaSyBKZqsKq_-HKdfz_lUXf-Mv8tq7Ija-xhE</string>
+    <string name="google_app_id" translatable="false">1:744029099331:android:6a544adca73eccd8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBKZqsKq_-HKdfz_lUXf-Mv8tq7Ija-xhE</string>
+    <string name="google_storage_bucket" translatable="false">test-notif-604ae.appspot.com</string>
+    <string name="project_id" translatable="false">test-notif-604ae</string>
+</resources>

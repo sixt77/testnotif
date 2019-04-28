@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\android app\\cordova\\testnotif\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\sacha\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\cd58c30c6a52340cbfd6e83cad97a442\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

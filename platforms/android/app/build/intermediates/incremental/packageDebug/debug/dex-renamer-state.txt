@@ -1,0 +1,4 @@
+#Mon Apr 29 00:26:44 CEST 2019
+base.0=D\:\\android app\\cordova\\testnotif\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
