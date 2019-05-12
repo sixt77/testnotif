@@ -5,18 +5,19 @@ function connect(log){
     identifiant = document.log.mail.value;
     password = document.log.pass.value;
     user_info = login(identifiant, password);
+    twttr.widgets.load(
+        document.getElementById("accueil")
+    );
     if(user_info.user_id !== undefined){
         user_role = (get_user_info(user_info.user_id));
-
         document.getElementById('connexion').style.display ='none';
-        document.getElementById('accueil').style.display = 'block';
+        document.getElementById('home').style.display = 'block';
         document.getElementById('menu').style.display = 'block';
         addButtonRoles(user_role);
     }else{
         alert('connexion refusée');
     }
 }
-
 function logOff(){
     document.getElementById('accueil').style.display = 'none';
     document.getElementById('connexion').style.display ='flex';
@@ -29,7 +30,13 @@ function logOff(){
 function addButtonRoles(user_role){
     loop = 0;
     role_list = Object.keys(user_role);
-
+    var acc = 'tweet';
+    var btnacc = document.createElement("BUTTON");
+    btnacc.setAttribute("id", "accueil");
+    btnacc.setAttribute("class", "roleButton");
+    btnacc.setAttribute("onclick", "displayRole('"+acc+"')");
+    btnacc.innerHTML = "Accueil";
+    document.getElementById('button_list').appendChild(btnacc);
     for (var i in user_role) {
         if(user_role[i] != null){
             if(role_list[loop] != "utilisateur" && role_list[loop] != "entraineur"){
@@ -94,11 +101,17 @@ function timestampToTime(UNIX_timestamp){
 }
 
 function displayRole(role){
+    console.log(role);
+    closeNav();
     hide_class("role_div");
     remove_class("match_div");
     remove_class("boutonCoach");
+    closeNav();
     document.getElementById(role).style.display ="flex";
     switch(role){
+        case 'tweet':
+            document.getElementById('tweet').style.visibility = 'visible';
+            break;
         case "joueur":
             var matchs= get_matchs_joueur(user_role.joueur);
             display_match(matchs,role);
